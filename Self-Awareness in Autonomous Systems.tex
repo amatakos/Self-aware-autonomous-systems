@@ -1,0 +1,160 @@
+\documentclass{amsbook}
+
+\usepackage[utf8]{inputenc}
+\usepackage[greek,english]{babel}
+\usepackage{amsmath}
+\usepackage{alphabeta}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{dirtytalk}
+\graphicspath{{./Images/}}
+\hypersetup{colorlinks=true, urlcolor=blue}
+\renewcommand{\linespread}{1.11}
+\begin{document}
+\begin{center}
+    \Huge{\textsc{\textbf{Self-Aware Autonomous Systems}}}
+    \vskip .4cm
+    \huge{\textbf{Ματάκος Αλέξανδρος \\
+    ΑΕΜ: 15777}}
+\end{center}
+\vskip 0.6cm
+\huge{\section{Introduction}}
+\vskip 0.5cm
+\huge{\textbf{What is Self-Awareness?}}
+\vskip 0.2cm
+\huge{Self-Awareness is an intensely researched subject, dating back to ancient times, which has re-emerged in the form of \say{Self-Awareness for Self-things} since the 1990s, a topic heavily discussed by scientists of various fields, such as Neuroscience, Biology, Philosophy and most importantly Computer Science and Artifical Intelligence. Its very nature is to this day unknown, and there is no definitive genuine theory which would explain its underlying basic principles and methods, as well as its patterns of emergence [2]. \\Some definitions include:\\ \say{A conscious knowledge of one's own character and feelings} (Oxford),\\\say{An awareness of one's own personality or individuality} (Wikipedia). \\It's apparent that we are talking about humane things, such as character, feelings and personality, which we automatically recognise as traits of living things, and not machines. However, it is not to be confused with \textit{consciousness}, which could be considered as the next step of self-awareness, via meta-self-awareness, which will be discussed later.\\\\
+While Neuroscience studies the physical processes taking place inside the brain and between neurons, to try and build a ground base theory, Psychology tries to recognise different aspects of our self-awareness, and explain the underlying mental mechanisms and properties at work. Ulric Neisser in his \say{Five Kinds of Self-knowledge} [1] argues that the \say{self} is like a puzzle, made up of \say{self-pieces}, which are full of apparent contradictions. His analysis distinguishes among  several kinds of self-specifying information, each establishing a different aspect of the self. Based on this, he categorizes the aspects of self-knowledge as follows: \\
+\begin{itemize}
+    \item The \textit{ecological self} is the self as perceived with respect to the physical environment: I am the person here in this place, engaged in this particular activity. 
+    \item The \textit{interpersonal self}, which appears from earliest infancy just as the ecological self does, is specified by species-specific signals of emotional rapport and communication: I am the person who is engaged, here, in this particular human interchange. 
+    \item The \textit{extended self} is based primarily on our personal memories and anticipations: I am the person who had certain specific experiences, who regularly engages in certain specific and familiar routines.
+    \item The \textit{private self} appears when children first notice that some of their experiences are not directly shared with other people: I am, in principle, the only person who can feel this unique and particular pain. 
+    \item The \textit{conceptual self} or 'self-concept' draws its meaning from the network of assumptions and theories in which it is embedded, just as all other concepts do. 
+\end{itemize}
+He continues to argue that these layers are developed from infancy, starting at different times, and it is through the interactions of these \say{selves} that self-awareness emerges.\\\\
+Other neuroscientists argue that self-awareness is \say{...an expression of consciousness which is a notion that requires to be clariﬁed, whose foundations are not proven, and which is even considered as an illusion}[2]. Others propose to ground it in the solid theoretical framework of Integrated Information Theory. Definitely, the topic of Self-Awareness still remains somewhat unclear.\\
+
+A difficult task like this, that attempts to imitate a function of living things' brain that pushes our knowledge and understanding of the world to the very edge, naturally requires cutting-edge technologies and comes with many technicalities. \\
+Some technical difficulties of this enormously difficult task include:
+\begin{itemize}
+    \item Extreme processing capabilities that will allow the Ego-thing to be online, react at runtime and integrate with other systems.
+    \item Severe algorithm complexity as well as systems inter-connectivity.
+    \item Huge amounts of training data that would have to be precisely refined and adjusted to each agent.
+    \item State of the art sensors for accurate measurings
+    \item Precise prediction algorithms that would minimize decisions' real-world implications, such as life or death decisions of an auto-vehicle.
+    \item Robust algorithms that can resolve conflict issues when one or more systems' decisions of the agent are conflicting .
+\end{itemize}
+
+The motivations of creating Self-Aware Autonomous Systems are many, as they are promising benefits in a vast variety of sciences and applications, some of which are more known while others are less. \\
+Refering some of these:
+\begin{itemize}
+    \item Autonomous Vehicles (Industry)
+    \item Autonomous Space Probes, Satellites, Observatories (Astrophysics) [3]
+    \item AGI (Artifical General Intelligence) or Superintelligent computers, designed with self-improving algorithms, that have the potential of solving humanity's greatest problems (eradicate diseases and death, global socioeconomic policy, energy, etc.) [4]
+\end{itemize}
+For now, introducing self-awareness to computing systems is intended to increase their usability by making them more efﬁcient, resilient, and ﬂexible. [5]
+\clearpage
+\huge{\section{Past Work}}
+ACT – R (2004) (Adaptive Control of Thought-Rational).\\
+The ACT-R architecture, standing for Adaptive Control of Thought-Rational and proposed by Anderson et al (2004) [2], is a classical rule-based system. Knowledge about facts and events and their relationships is organized in a declarative memory along with a set of production rules and procedures. The memory component contains data structures called “chunks” whose meaning is nevertheless quite diﬀerent from the chunks used in SOAR. The rules associated to selecting particular chunks depend ﬁrst on the existence of matching elements in memory, and second also depend on the estimated probability of success and cost of their execution. Applying these rules can result in two diﬀerent operations: either trigger robot action in the world, or change the corresponding elements in declarative memory. Each chunk in memory is also associated to a \say{base level} which increases proportionally to the number of times they have been selected in the past. This results in using chunks that have already been selected, i.e., that were used in more successful activations of the rules. The costs and success rates of the rules is modiﬁed according to the outcome of their execution. This leads to an improvement of the global behavior through time. Furthermore, there is a \say{compilation} process that produces new rules from analyzing the chunks involved in goal achievement. \\\\
+SOAR (2006) (State, Operator And Result).\\
+The SOAR architecture, standing for State, Operator And Result, was proposed by Lehman et al. (2006) [2] and aims at modeling human cognition. It is based on Alan Newell’s work on theories of cognition. Operational knowledge in SOAR is represented by production rules. To achieve a goal, the rules conditions are matched to a \say{working memory}, of which the contents is encoded as sets of attribute-values. Learning in SOAR is mainly based on a mechanism called \say{chunking} (other mechanisms such as reinforcement learning are being added). This process is similar to identifying macro-operators, i.e., new rules that abstract the succession of rules selected to achieve a goal. \\\\
+SISSY (2013 (Self-improving System Integration).\\
+SISSY, or \say{self-improving system integration} is an attempt for intelligent integration of complex systems that have both adaptive and non-adaptive components or subsystems. In engineering, the notion of integration describes a process in which several component (sub-)systems are brought together and interconnected into a unified system. This aims to achieve a correctly working unit, where the subsystems work together to provide desired functions, with acceptable performance and dependability properties. With increasingly networked and open systems (e.g., internet of things, smart homes and grids, or smart traffic), there is the challenge of integrating systems dynamically, as rapidly as possible. Because of the dynamic contexts-where goals, resources, and knowledge required for integration change rapidly-increasing efforts have been directed towards new processes and computations that allow intelligent systems to do most of the integration themselves.
+\\\\
+These major cognitive architectures present numerous common points. First, they both employ symbolic representations at high levels of abstractions. Second, they both use production rules to represent operational knowledge. Learning mechanisms in both architectures is mainly based on a memory of the success associated to prior action execution. Although, neither of these architectures really tackle the issue of operating in real time, nor the issue of how to build novel internal representations from sensory data. \clearpage
+\huge{\section{Existing Work}
+\vskip 0.2cm
+To tackle all of the numerous issues mentioned, there are new models constantly proposed, with numerous approaches to obtain self-awareness. In this section, we will discuss this current work. Firstly, let's take a look at a theoretical model:\\\\
+
+\textbf{Levels of Networked Self-Awareness} [5]. \\\\This work attempts to tackle the issue of SISSY systems, which is that they have to integrate with other systems at runtime. The authors argue that self-awareness may not be enough on its own. Just like humans become better at cooperative work once they become aware of the self-awareness of others, integrating systems have to also be aware of the ongoing interactions between other sub-systems and how their own interactions will inﬂuence the behaviour of the entire system. 
+The authors define 5 levels of networked-self awareness:
+\begin{enumerate}
+    \item Networked Stimulus-awareness, where the system doesn’t know if the stimuli is internal or external. 
+    \item Networked Interaction-awareness, which models the effects of interactions of others on itself.
+    \item Networked Time-awareness, which keeps information about past stimuli, and potentially predicts future situations or environment states.
+    \item Networked Goal-awareness, which is understanding others’ and own goals, and potentially changing these goals.
+    \item Networked Meta-self-awareness, which is the ability to determine its own level of networked self-awareness.
+\end{enumerate}
+Since future self-integrating systems will interact with and incorporate with other, interacting systems, it will be vital to enable each individual to understand the goals of the others, the interactions among various other systems, and the impact of it all. As such, the authors present  different levels of networked self-awareness that should, upon implementation, bring forth systems that are able to self-integrate and potentially even disintegrate at runtime without the assistance of a human operator. 
+\clearpage
+\textbf{Toward Self-Aware Robots}
+\vskip 0.5cm
+The paper develops along ﬁve issues: 
+\begin{enumerate}
+    \item Agent perception and interaction with the environment
+    \item Learning actions
+    \item Agent interaction with other agents - specifically humans
+    \item Decision making
+    \item The cognitive architecture integrating these capacities
+\end{enumerate} 
+}
+The paper describes how the notion of self-awareness could be related to the development and integration of perceptual abilities for self localization and environment interpretation, decision-making and deliberation, learning and self-assessment, and interaction with other agents. Such an integration appears to be key to enable the robot to develop some sense of agency, or the awareness of being in control of its own actions and responsible for their outcome. The processes implementing these capacities must operate simultaneously for online performance in robots interacting in real-time with their environment as well as with other agents. The understanding of these interactions by an agent requires its self-awareness, which actually is itself emerging as a result of this understanding and the distinction that the agent is capable to make between its own self (both "mind" and body) and its environment. This constitutes a dynamical system which givers rise to higher levels of self-awareness.\\\\
+The paper proposes a method of Perception and Learning Affordances. The robot learns that not all things are the same to everyone, and gets introduced to a sense of perspective. This is done by developing sensorimotor representations and not just exteroceptive representations. This puts the robot in the center of the perceptual process, makes the process non-isolated and provides a link between self-awareness and situation-awareness.\\
+The sensory-motor representations and scene interpretation processes integrate four inputs:\\Perceptual (perceiving the external scene), proprioceptive (input from the agent’s own conﬁguration), contextual (previous knowledge) and the agent’s action capabilities. 
+\\The robot’s actions, the objects in the environment, as well as changes in the observable environment triggered by the robot’s actions are represented in a Bayesian Network, on which structural learning is performed afterwards, on continuous and discrete variables representing this information. Then the robot can analyze the Bayesian Network and discover correlations between itself and the environment from the statistical data.
+The acquired information can afterwards be used towards learning decisions, planning future tasks, or adding sensor and motor capabilities to the innate repertoire.\\\\
+A 3D version of Voxel Cloud Connectivity Segmentation (VCCS) is applied to the environment, which generates an evenly distributed set of supervoxels. There supervoxels are 39-D feature vectors:\\ \[ (R,G,B,x,y,z,...), \] \\ where R,G,B are the pixel values of the basic colors Red, Green, Blue, $\math{x,y,z}$ are spatial coordinates, and the other 33 inputs are elements from an extension of the Fast Point Feature Histogram (FPFH)\\
+Supervoxels only represent individual patches, as can be seen in Figure 2 below. A clustering process is needed to group the supervoxels that possibly correspond to the same object.\\\\
+
+\includegraphics[width=14cm]{Towards Self-Robots_1_1.png}\\
+\\
+\vskip 0.5cm
+\includegraphics[width=14cm]{Towards Self-Robots_2_2.png}\\\\
+\vskip 0.2cm
+https://www.frontiersin.org/articles/10.3389/frobt.2018.00088/full\clearpage
+The robot also learns by manipulating objects. Manipulating objects enables the robot to not only perceive information, but also and most importantly to learn sensory-motor correlations between the robot’s basic actions $A$, the sensory inputs contained in the objects’ descriptions $O$, and the salient changes represented by the eﬀects $E$. The objective here is to learn from regularities in the occurrences of elements in $O$ and $E$ when an action $a_i \in A$ is triggered. While the robot is starting the learning from built-in actions, this process permits to progressively develop a representation of the environment captured by perception through object movement detection and proprioceptive feedback.\\
+Based on this, an affordance $a$ is defined as:\\
+\[ α = ((οk,al), ej),\] \\for\\  \[ok \in O, al \in A, ej \in E.\]
+\\\clearpage
+An example is shown below, depicting the "grasp-ability" effect:\\\vskip 0.5cm
+\includegraphics[width=13.5cm]{Towards Self-Robots_3.png}
+\\\\\vskip 0.2cm
+https://www.frontiersin.org/articles/10.3389/frobt.2018.00088/full\clearpage
+So, the methodology is to create a Bayesian Network from sets $O, A, E$, considering each element from these sets as a random variable and finding the dependencies $P(B|D)$ in $B$, where D is the interaction data. The aﬀordances are described by the conditional dependencies between variables in $B$. After using a Hill Climbing search algorithm on the set of all possible Bayesian Networks created by the possible movements and actions of the robot, the robot converges to a single Bayesian Network that encodes its acquired knowledge.\\
+\\
+Moving further on, a decision-making strategy is implemented in the robot as follows:\\
+Two types of strategies are defined, a goal-directed behavior based on a model of the robot's world and a habitual behavior, which is local and model-free. These intend to imitate the way humans have general goals and plans, and how these drive them and motivate them, in contrast with ordinary habitual behavior, which happens automatically and is usually mentally easy and not challenging. A meta-controller is implemented, who has the ability to handle control of the systems decisions to one of the two modules that are responsible for the two strategies mentioned. This meta-controller is responsible for calculating the optimal \say{handler} of the situation by maximizing the sum of rewards that are fed by a reinforcement learning system. 
+
+\includegraphics[width = 14cm]{Towards Self-Robots_4.png}
+\\\\\vskip 0.2cm
+https://www.frontiersin.org/articles/10.3389/frobt.2018.00088/full\clearpage
+\textbf{\huge{The Cognitive Architecture.}\vskip 0.2cm
+The robot's cognitive architecture contains modules for:}
+\begin{itemize}
+    \item Sensing and acting in the environment (Sensorial perception and Motor modules)
+    \item Sensorimotor learning (sensorimotor learning module) 
+    \item Symbolic knowledge generation and management (blue modules: Spatial reasoning and knowledge, Knowledge base) 
+    \item Decision and action planning (green modules: Human-aware task planning, Reinforcement Learning model-free decision making system, Human-aware motion and manipulation planning)
+    \item Controlling the modules (Supervision system)
+    \item Goal management (Motivation module)
+    \item Dialogue management
+\end{itemize}
+\vskip 0.3cm
+These modules are interconnected as follows:
+\vskip 0.2cm
+The Sensorial perception module contains the innate set of perceptual abilities for perceiving the environment (visual perception and proprioception).The Motor module contains the innate set of action primitives available to the robot, which allow it to interact with the environment.
+\vskip 0.2cm
+The Sensorimotor learning module processes the available pre-processed inputs (i.e., objects detected, actions performed, measured eﬀects) to discover and learn which interactions are available to the robot in the current environment (i.e., aﬀordance learning). It also generates the set of available actions that were learned after the interaction with the environment, together with their pre-conditions and post-conditions.
+\vskip 0.2cm
+The Spatial reasoning and knowledge and the Knowledge base modules generate and store symbolic data about the perceived environment. This data is then used in the action planning phase by the corresponding modules: Human-aware task planning module, and the Human-aware motion and manipulation planning module. Knowledge about the current state and the available actions is used by the Reinforcement Learning model-free decision making system.\vskip 0.2cm
+The Supervision system communicates with the aforementioned modules to decide which action planning system to employ, to perform on-line plan correction, and to monitor the activity of humans with which it interacts.
+\vskip 0.2cm\clearpage
+Finally, the Motivation module manages the set of goals that have to be achieved by the robot. Together with the action planning modules, it computes the optimal set of actions to perform, so as to obtain the highest reward in the given time horizon. 
+\vskip 2cm
+\includegraphics[width=14cm]{Towards Self-Robots_9.png}
+https://www.frontiersin.org/articles/10.3389/frobt.2018.00088/full
+}
+\clearpage
+\huge{\section{References}}
+\begin{enumerate}
+    \item  Ulric Neisser (1988) Five kinds of self‐knowledge, Philosophical Psychology, 1:1, 35-59, \\DOI: 10.1080/09515088808572924 \\ link: https://doi.org/10.1080/09515088808572924
+    \item  Chatila R, Renaudo E, Andries M, Chavez-Garcia R-O, Luce-Vayrac P, Gottstein R, Alami R, Clodic A, Devin S, Girard B and Khamassi M (2018) Toward Self-Aware Robots. Front. Robot. AI 5:88. doi: 10.3389/frobt.2018.00088
+    \item Schilling, K., De Lafontaine, J. Roth, H. Autonomy capabilities of European deep space probes. Auton Robot 3, 19–30 (1996). https://doi.org/10.1007/BF00162465
+    \item The AI Revolution: The Road to Superintelligence, by Tim Urban
+    https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html
+    \item Lukas Esterle, John NA Brown, Levels of Networked Self-Awareness DOI 10.1109/FAS-W.2018.00054
+\end{enumerate}
+
+\end{document}
